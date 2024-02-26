@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<yml_catalog date="2021-07-17 12:10">
+    <shop>
+        <name>Работает</name>
+        <company>«РеалМедик»</company>
+        <url>https://real-medic.ru/</url>
+        <email>info@real-medic.ru</email>
+        <picture>https://real-medic.ru/png/logo8b86.png</picture>
+        <description>Каталог врачей</description>
+        <currencies>
+          <currency id="RUR" rate="1" />
+        </currencies>
+        <categories>
+            <category id="1">Врач</category>
+        </categories>
+
+        <sets>
+            <set id="uzi">
+                <name>Врач УЗИ</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="ortoped">
+                <name>Ортопед</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="pediatr">
+                <name>Педиатр</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="ftiziatr">
+                <name>Фтизиатр</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="Otorin">
+                <name>Оториноларинголог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="terapevt">
+                <name>Терапевт</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="immun">
+                <name>Иммунолог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="giencolog">
+                <name>Гинеколог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="pulmon">
+                <name>Пульмонолог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="nevrolog">
+                <name>Невролог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="endocrin">
+                <name>Эндокринолог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="fizioter">
+                <name>Физиотерапевт</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="allergy">
+                <name>Аллерголог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="immun">
+                <name>Иммунолог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="kardiology">
+                <name>Кардиолог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="hirurg">
+                <name>Хирург</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			<set id="mamolog">
+                <name>Маммолог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			
+			<set id="proctolog">
+                <name>Проктолог</name>
+                <url>https://real-medic.ru/</url>
+            </set>
+			
+			
+			
+        </sets>
+        <offers>
+            <!--
+                Оффер для врача - это связка "Врач"-"Клиника"-"Тип приема".
+                При наличии у врача нескольких офферов нужно предоставить каждый из них отдельно.
+                В таком случае URL разных офферов одного врача должны различаться незначащим cgi-параметром ?offer-id=...
+
+            -->
+            <!--group_id - уникальный идентификтаор врача. нужен при наличии разных URL у одного человека. Целое число, не более 9 знаков-->
+   
+			<offer id="vrach113" group_id="94723"> 
+                <name>Татаринов Константин Евгеньевич</name> <!--ФИО, именно в таком порядке-->
+                <!--URL может совпадать ТОЛЬКО для офферов с одинаковым group_id.-->
+                <url>https://real-medic.ru/doktors-179.html</url><!--URL карточки врача. -->
+                <price from="true">3500</price>  <!--Цена приема при записи в источнике фида, с учетом скидки -->
+                <oldprice>3500</oldprice>  <!--Цена приема в клинике, должна быть не ниже price-->
+                <currencyId>RUR</currencyId>
+                <sales_notes>Первичный прием</sales_notes>
+                <set-ids>hirurg,proctolog</set-ids> <!--специальности через запятую-->
+                <picture>https://real-medic.ru/upl/pub/179-4-1690643923-1.jpg</picture>
+                <description> сферу особого внимания доктора входят следующие направления: трансдермальная субмукозная лазерная геморроидэктомия, внутрипросветная геморроидэктомия, Hal-rar, геморроидэктомия по Фергесону с восстановлением слизистой анального канала, иссечение ЭКХ по методике Bascom 1 и 2, что позволяет вернуться к нормальной жизни на следующий день после операции, в сравнении с традиционным иссечением ЭКХ, где восстановительный период занимает в среднем 3 недели, иссечение анальных трещин, операции при острых и хронических парапроктитах, удаление полипов прямой кишки, удаление кондилом перианальной области и анального канала), все виды малоинвазивных методик лечения геморроя.
+				</description>
+                <categoryId>1</categoryId>
+                <!--Пустых блоков param быть не должно. Если необязательное поле не заполнено, его нужно исключить из фида-->
+                <param name="Фамилия">Татаринов</param>
+                <param name="Имя">Константин</param>
+                <param name="Отчество">Евгеньевич</param>
+                <param name="Годы опыта">13</param>
+                <param name="Начало карьеры">2011-01-01</param> <!--Дата начала карьеры, для подсчета стажа-->
+                <param name="Город">г. Жуковский</param>
+                <param name="Взрослый врач">true</param> <!--Принимает взрослых, от 18 лет-->
+                <param name="Детский врач">false</param> <!--Принимает детей, до 18 лет-->
+                <param name="Ссылка на профиль врача">https://real-medic.ru/doktors-179.html</param>
+                <param name="Город клиники">г. Жуковский</param>
+                <param name="Адрес клиники">ул. Королева, д.6, стр.1</param>
+                <param name="Название клиники">Клиника «РеалМедик»</param>
+                <param name="Возможность записи">true</param> <!--Возможность записаться на прием через сайт-поставщик фида-->
+                <param name="Телефон для записи">+7(495)201-45-88</param> <!--Можно подменник аггрегатора-->
+            </offer>
+			
+        </offers>
+    </shop>
+</yml_catalog>
